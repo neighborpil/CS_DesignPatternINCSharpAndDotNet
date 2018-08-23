@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lec03_SingleResponsibilityP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lec04_OpenClosedPrinciple", "Lec04_OpenClosedPrinciple\Lec04_OpenClosedPrinciple.csproj", "{72CE925B-C8EA-4E2B-94C5-197D8E1E4636}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_SingleResponsibilityPrinciple", "Test_SingleResponsibilityPrinciple\Test_SingleResponsibilityPrinciple.csproj", "{B78AA868-C085-4FAC-9F4B-492FE8A3D604}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_OpenClosedPrinciple", "Test_OpenClosedPrinciple\Test_OpenClosedPrinciple.csproj", "{CF30743A-65C6-4ECC-BD18-89C9BFF86B6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{72CE925B-C8EA-4E2B-94C5-197D8E1E4636}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72CE925B-C8EA-4E2B-94C5-197D8E1E4636}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72CE925B-C8EA-4E2B-94C5-197D8E1E4636}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B78AA868-C085-4FAC-9F4B-492FE8A3D604}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B78AA868-C085-4FAC-9F4B-492FE8A3D604}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B78AA868-C085-4FAC-9F4B-492FE8A3D604}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B78AA868-C085-4FAC-9F4B-492FE8A3D604}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF30743A-65C6-4ECC-BD18-89C9BFF86B6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF30743A-65C6-4ECC-BD18-89C9BFF86B6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF30743A-65C6-4ECC-BD18-89C9BFF86B6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF30743A-65C6-4ECC-BD18-89C9BFF86B6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
