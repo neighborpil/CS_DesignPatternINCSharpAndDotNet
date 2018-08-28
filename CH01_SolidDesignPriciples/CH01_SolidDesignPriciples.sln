@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_SingleResponsibilityPr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_OpenClosedPrinciple", "Test_OpenClosedPrinciple\Test_OpenClosedPrinciple.csproj", "{CF30743A-65C6-4ECC-BD18-89C9BFF86B6E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lec05_LiscovSubstitutionPrinciple", "Lec05_LiscovSubstitutionPrinciple\Lec05_LiscovSubstitutionPrinciple.csproj", "{1C9F62C7-445F-4EC1-A7FC-0D7B530118D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiscovSubstitutionPrincipleTest", "LiscovSubstitutionPrincipleTest\LiscovSubstitutionPrincipleTest.csproj", "{A29AA788-207D-4581-AE29-3EC19E7E88FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{CF30743A-65C6-4ECC-BD18-89C9BFF86B6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF30743A-65C6-4ECC-BD18-89C9BFF86B6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF30743A-65C6-4ECC-BD18-89C9BFF86B6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C9F62C7-445F-4EC1-A7FC-0D7B530118D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C9F62C7-445F-4EC1-A7FC-0D7B530118D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C9F62C7-445F-4EC1-A7FC-0D7B530118D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C9F62C7-445F-4EC1-A7FC-0D7B530118D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A29AA788-207D-4581-AE29-3EC19E7E88FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A29AA788-207D-4581-AE29-3EC19E7E88FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A29AA788-207D-4581-AE29-3EC19E7E88FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A29AA788-207D-4581-AE29-3EC19E7E88FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
