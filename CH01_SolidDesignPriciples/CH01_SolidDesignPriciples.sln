@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lec05_LiscovSubstitutionPri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiscovSubstitutionPrincipleTest", "LiscovSubstitutionPrincipleTest\LiscovSubstitutionPrincipleTest.csproj", "{A29AA788-207D-4581-AE29-3EC19E7E88FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lec06_InterfaceSegregationPrinciple", "Lec06_InterfaceSegregationPrinciple\Lec06_InterfaceSegregationPrinciple.csproj", "{E6B5545F-C289-4023-993E-90A86775F240}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lec07_DependencyInversionPrinciple", "Lec07_DependencyInversionPrinciple\Lec07_DependencyInversionPrinciple.csproj", "{866A2C6A-56C3-4C42-B96F-18B25995070E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{A29AA788-207D-4581-AE29-3EC19E7E88FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A29AA788-207D-4581-AE29-3EC19E7E88FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A29AA788-207D-4581-AE29-3EC19E7E88FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6B5545F-C289-4023-993E-90A86775F240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6B5545F-C289-4023-993E-90A86775F240}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6B5545F-C289-4023-993E-90A86775F240}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6B5545F-C289-4023-993E-90A86775F240}.Release|Any CPU.Build.0 = Release|Any CPU
+		{866A2C6A-56C3-4C42-B96F-18B25995070E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{866A2C6A-56C3-4C42-B96F-18B25995070E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{866A2C6A-56C3-4C42-B96F-18B25995070E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{866A2C6A-56C3-4C42-B96F-18B25995070E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
