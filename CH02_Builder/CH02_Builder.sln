@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lec10_LifeWithoutBuilder", "Lec10_LifeWithoutBuilder\Lec10_LifeWithoutBuilder.csproj", "{AE16A1F4-D149-48A4-8BDB-33B99262D502}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lec11_Builder", "Lec11_Builder\Lec11_Builder.csproj", "{F5002293-DA3A-4320-8D27-765B097D125F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AE16A1F4-D149-48A4-8BDB-33B99262D502}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE16A1F4-D149-48A4-8BDB-33B99262D502}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE16A1F4-D149-48A4-8BDB-33B99262D502}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5002293-DA3A-4320-8D27-765B097D125F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5002293-DA3A-4320-8D27-765B097D125F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5002293-DA3A-4320-8D27-765B097D125F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5002293-DA3A-4320-8D27-765B097D125F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
