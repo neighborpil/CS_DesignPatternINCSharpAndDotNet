@@ -4,16 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lec13_FluentBuilderInheritanceWithRecursiveGenerics
+namespace Test_FluentBuilderInheritanceWithRecursiveGenerics
 {
     public class Person
     {
         public string Name;
         public string Position;
 
-        public class Builder : PersonInfoBuilder<Builder>
+        public class Builder : PersonJobBuilder<Builder>
         {
-
         }
 
         public static Builder New => new Builder();
@@ -27,16 +26,16 @@ namespace Lec13_FluentBuilderInheritanceWithRecursiveGenerics
     public abstract class PersonBuilder
     {
         protected Person person = new Person();
+
         public Person Build()
         {
             return person;
         }
     }
-         
-    // 
+
     public class PersonInfoBuilder<SELF> : PersonBuilder where SELF : PersonInfoBuilder<SELF>
     {
-        //protected Person person = new Person(); // 상속 사용
+
         public SELF Called(string name)
         {
             person.Name = name;
@@ -44,9 +43,9 @@ namespace Lec13_FluentBuilderInheritanceWithRecursiveGenerics
         }
     }
 
-    public class PersonJobBuilder<SELF>: PersonInfoBuilder<PersonJobBuilder<SELF>> where SELF : PersonJobBuilder<SELF>
+    public class PersonJobBuilder<SELF> : PersonInfoBuilder<SELF> where SELF : PersonJobBuilder<SELF>
     {
-        public SELF WorksAsA(string position)
+        public SELF WorkAsA(string position)
         {
             person.Position = position;
             return (SELF)this;
@@ -57,19 +56,15 @@ namespace Lec13_FluentBuilderInheritanceWithRecursiveGenerics
     {
         static void Main(string[] args)
         {
-            //var builder = new PersonJobBuilder();
-            //builder.Called("dmitri")
-            //       .WorksAsAs // 오류가 뜬다 왜냐하면 Called메서드는 PersonInfoBuilder를 Return하기 때문이다
+            //var me = new PersonJobBuilder()
+            //    .Called("feel")
+            //    .wa
 
             var me = Person.New
                 .Called("feel")
-                .WorksAsA("programmer")
+                .WorkAsA("Programmer")
                 .Build();
             Console.WriteLine(me);
-
-            var personJobBuilder = Person.New
-                .Called("feel");
-            Console.WriteLine(personJobBuilder);
         }
     }
 }
