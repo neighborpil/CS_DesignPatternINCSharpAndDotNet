@@ -52,7 +52,7 @@ namespace Lec21_AbstractFactory
 
     public class HotDrinkMachine
     {
-        public enum AvailableDrink
+        public enum AvailableDrink // open close priciple을 어긴다
         {
             Coffee, Tea
         }
