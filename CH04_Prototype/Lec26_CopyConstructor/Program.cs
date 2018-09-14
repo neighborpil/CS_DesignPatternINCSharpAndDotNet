@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lec25_IClonableIsBad
+namespace Lec26_CopyConstructor
 {
-
-    public class Person : ICloneable // deep copy를 명시하는 내용이 없다. 
+    public class Person// : ICloneable // deep copy를 명시하는 내용이 없다. 
     {
         public string[] Names;
         public Address Address;
@@ -18,11 +17,17 @@ namespace Lec25_IClonableIsBad
             this.Address = address ?? throw new ArgumentNullException(paramName: nameof(address));
         }
 
-        //deep copy
-        public object Clone()
+        public Person(Person other)
         {
-            return new Person(Names, (Address)Address.Clone());
+            Names = other.Names;
+            Address = new Address(other.Address);
         }
+
+        //deep copy
+        //public object Clone()
+        //{
+        //    return new Person(Names, (Address)Address.Clone());
+        //}
 
         public override string ToString()
         {
@@ -30,7 +35,7 @@ namespace Lec25_IClonableIsBad
         }
     }
 
-    public class Address : ICloneable
+    public class Address// : ICloneable
     {
         public string StreetName;
         public int HouseNumber;
@@ -41,15 +46,21 @@ namespace Lec25_IClonableIsBad
             HouseNumber = houseNumber;
         }
 
+        public Address(Address other)
+        {
+            StreetName = other.StreetName;
+            HouseNumber = other.HouseNumber;
+        }
+
         public override string ToString()
         {
             return $"{nameof(StreetName)}: {StreetName}, {nameof(HouseNumber)}: {HouseNumber}";
         }
 
-        public object Clone()
-        {
-            return new Address(StreetName, HouseNumber);
-        }
+        //public object Clone()
+        //{
+        //    return new Address(StreetName, HouseNumber);
+        //}
     }
 
     class Program
@@ -61,11 +72,9 @@ namespace Lec25_IClonableIsBad
             //var jane = john;
             //jane.Names[0] = "Jane";
 
-            //shallow copy
-            var jane = (Person)john.Clone();
-            jane.Address.HouseNumber = 321;
-
-            // deep copy
+            // 결과는 IClonable과 같다. 하지만 새로운 생성자를 생성하는 방법은 C#에서는 흔하지 않아 별로 좋지 않다
+            var jane = new Person(john); 
+            jane.Address.HouseNumber = 321; 
 
             Console.WriteLine(john);
             Console.WriteLine(jane);
@@ -75,4 +84,5 @@ namespace Lec25_IClonableIsBad
 
         }
     }
+
 }
