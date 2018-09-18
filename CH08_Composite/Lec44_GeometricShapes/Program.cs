@@ -21,9 +21,9 @@ namespace Lec44_GeometricShapes
                 sb.Append(new string('*', depth))
                     .Append(string.IsNullOrWhiteSpace(Color) ? string.Empty : $"{Color} ")
                     .AppendLine(Name);
-                foreach (var item in collection)
+                foreach (var child in Children)
                 {
-
+                    child.Print(sb, depth + 1);
                 }
             }
 
@@ -47,6 +47,16 @@ namespace Lec44_GeometricShapes
 
         static void Main(string[] args)
         {
+            var drawing = new GraphicObject { Name = "My Drawing" };
+            drawing.Children.Add(new Square { Color = "Red" });
+            drawing.Children.Add(new Circle { Color = "Yellow" });
+
+            var group = new GraphicObject();
+            group.Children.Add(new Circle { Color = "Blue" });
+            group.Children.Add(new Square { Color = "Blue" });
+            drawing.Children.Add(group);
+
+            Console.WriteLine(drawing);
         }
     }
 }
