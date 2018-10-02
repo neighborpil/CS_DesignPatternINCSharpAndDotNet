@@ -77,12 +77,50 @@ namespace Test_StaticDecoratorComposition
         public override string AsString() => $"{shape.AsString()} has {transparency * 100}% transparency";
     }
 
+    public class ColoredShape<T> : Shape where T : Shape, new()
+    {
+        private string color;
+        T shape = new T();
+
+        public ColoredShape() : this("black")
+        {
+
+        }
+
+        public ColoredShape(string color)
+        {
+            this.color = color ?? throw new ArgumentNullException(paramName: nameof(color));
+        }
+
+        public override string AsString() => $"{shape.AsString()} has the color {color}";
+    }
+
+    public class TransparentShape<T> : Shape where T : Shape, new()
+    {
+        private float transparency;
+        T shape = new T();
+
+        public TransparentShape() : this(0.0f)
+        {
+
+        }
+
+        public TransparentShape(float transparency)
+        {
+            this.transparency = transparency;
+        }
+        public override string AsString() => $"{shape.AsString()} has {transparency * 100}% transparency";
+    }
+
     class Program
     {
         static void Main(string[] args)
         {
+            var redSquare = new ColoredShape<Square>("red");
+            Console.WriteLine(redSquare.AsString());
 
-
+            var circle = new TransparentShape<ColoredShape<Circle>>(0.4f);
+            Console.WriteLine(circle.AsString());
         }
     }
 }

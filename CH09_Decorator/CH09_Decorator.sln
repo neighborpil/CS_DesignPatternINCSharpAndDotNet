@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lec52_StaticDecoratorCompos
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_StaticDecoratorComposition", "Test_StaticDecoratorComposition\Test_StaticDecoratorComposition.csproj", "{14AD8789-7F91-454B-B310-9E6B530DC4E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex1_Decorator", "Ex1_Decorator\Ex1_Decorator.csproj", "{F27B7A63-DE76-4FE7-A64E-A9307B806959}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{14AD8789-7F91-454B-B310-9E6B530DC4E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14AD8789-7F91-454B-B310-9E6B530DC4E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14AD8789-7F91-454B-B310-9E6B530DC4E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F27B7A63-DE76-4FE7-A64E-A9307B806959}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F27B7A63-DE76-4FE7-A64E-A9307B806959}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F27B7A63-DE76-4FE7-A64E-A9307B806959}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F27B7A63-DE76-4FE7-A64E-A9307B806959}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

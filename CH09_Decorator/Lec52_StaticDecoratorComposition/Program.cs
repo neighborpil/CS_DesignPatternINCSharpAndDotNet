@@ -127,6 +127,5 @@ namespace Lec52_StaticDecoratorComposition
             var circle = new TransparentShape<ColoredShape<Circle>>(0.4f);
             Console.WriteLine(circle.AsString());
         }
-
     }
 }
