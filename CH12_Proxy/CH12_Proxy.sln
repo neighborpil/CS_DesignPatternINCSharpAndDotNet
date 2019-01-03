@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lec63_PropertyProxy", "Lec6
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_PropertyProxy", "Test_PropertyProxy\Test_PropertyProxy.csproj", "{1523E046-A931-46F8-A403-D2D325466253}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lec64_DynamicProxyForLogging", "Lec64_DynamicProxyForLogging\Lec64_DynamicProxyForLogging.csproj", "{7A0E4E5E-C784-4F4E-9981-D91221D3D3A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{1523E046-A931-46F8-A403-D2D325466253}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1523E046-A931-46F8-A403-D2D325466253}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1523E046-A931-46F8-A403-D2D325466253}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A0E4E5E-C784-4F4E-9981-D91221D3D3A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A0E4E5E-C784-4F4E-9981-D91221D3D3A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A0E4E5E-C784-4F4E-9981-D91221D3D3A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A0E4E5E-C784-4F4E-9981-D91221D3D3A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
