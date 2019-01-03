@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_PropertyProxy", "Test_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lec64_DynamicProxyForLogging", "Lec64_DynamicProxyForLogging\Lec64_DynamicProxyForLogging.csproj", "{7A0E4E5E-C784-4F4E-9981-D91221D3D3A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_DynamicProxyForLogging", "Test_DynamicProxyForLogging\Test_DynamicProxyForLogging.csproj", "{8DB50A3D-2CFC-4DCC-908C-283A3DB8B375}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex1_ProxyCodingExercise", "Ex1_ProxyCodingExercise\Ex1_ProxyCodingExercise.csproj", "{965264AC-FAD1-45A4-A4E5-D3E29CB7DD20}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{7A0E4E5E-C784-4F4E-9981-D91221D3D3A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A0E4E5E-C784-4F4E-9981-D91221D3D3A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A0E4E5E-C784-4F4E-9981-D91221D3D3A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DB50A3D-2CFC-4DCC-908C-283A3DB8B375}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DB50A3D-2CFC-4DCC-908C-283A3DB8B375}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DB50A3D-2CFC-4DCC-908C-283A3DB8B375}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DB50A3D-2CFC-4DCC-908C-283A3DB8B375}.Release|Any CPU.Build.0 = Release|Any CPU
+		{965264AC-FAD1-45A4-A4E5-D3E29CB7DD20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{965264AC-FAD1-45A4-A4E5-D3E29CB7DD20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{965264AC-FAD1-45A4-A4E5-D3E29CB7DD20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{965264AC-FAD1-45A4-A4E5-D3E29CB7DD20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
