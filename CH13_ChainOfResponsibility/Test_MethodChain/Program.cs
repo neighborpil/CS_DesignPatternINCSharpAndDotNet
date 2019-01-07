@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lec69_MethodChain
+namespace Test_MethodChain
 {
     public class Creature
     {
@@ -49,12 +49,11 @@ namespace Lec69_MethodChain
     {
         public NoBonusesModifier(Creature creature) : base(creature)
         {
-
         }
 
         public override void Handle()
         {
-            //base.Handle();
+            //
         }
     }
 
@@ -62,7 +61,6 @@ namespace Lec69_MethodChain
     {
         public DoubleAttackModifier(Creature creature) : base(creature)
         {
-
         }
 
         public override void Handle()
@@ -73,16 +71,16 @@ namespace Lec69_MethodChain
         }
     }
 
-    public class IncreasedDefenseModifier : CreatureModifier
+    public class IncreaseDefenseModifier : CreatureModifier
     {
-        public IncreasedDefenseModifier(Creature creature) : base(creature)
+        public IncreaseDefenseModifier(Creature creature) : base(creature)
         {
         }
 
         public override void Handle()
         {
-            Console.WriteLine($"Increasing {creature.Name}'s defense");
-            creature.Defense += 3;
+            Console.WriteLine($"Increase {creature.Name}'s defense");
+            creature.Defense = +3;
             base.Handle();
         }
     }
@@ -95,19 +93,13 @@ namespace Lec69_MethodChain
             Console.WriteLine(goblin);
 
             var root = new CreatureModifier(goblin);
-
-            root.Add(new NoBonusesModifier(goblin));
-
-            Console.WriteLine("Let's double the goblin's attack");
             root.Add(new DoubleAttackModifier(goblin));
-
-            Console.WriteLine("Let's increase the goblin's defense");
-            root.Add(new IncreasedDefenseModifier(goblin));
-
+            root.Add(new NoBonusesModifier(goblin));
+            root.Add(new IncreaseDefenseModifier(goblin));
             root.Handle();
             Console.WriteLine(goblin);
-
             Console.ReadKey();
+
         }
     }
 }
