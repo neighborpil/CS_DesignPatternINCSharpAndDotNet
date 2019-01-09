@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_MethodChain", "Test_Me
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lec70_BrokerChain", "Lec70_BrokerChain\Lec70_BrokerChain.csproj", "{08ECC8E1-981D-4097-A9F5-86EB11377AEF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_BrokerChain", "Test_BrokerChain\Test_BrokerChain.csproj", "{01DC9018-CDCE-43EA-87D8-85B90D36271F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex1_ChainOfResponsibility", "Ex1_ChainOfResponsibility\Ex1_ChainOfResponsibility.csproj", "{D462BDC7-2BE5-45F1-A84B-C244C4B3B827}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{08ECC8E1-981D-4097-A9F5-86EB11377AEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08ECC8E1-981D-4097-A9F5-86EB11377AEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08ECC8E1-981D-4097-A9F5-86EB11377AEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01DC9018-CDCE-43EA-87D8-85B90D36271F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01DC9018-CDCE-43EA-87D8-85B90D36271F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01DC9018-CDCE-43EA-87D8-85B90D36271F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01DC9018-CDCE-43EA-87D8-85B90D36271F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D462BDC7-2BE5-45F1-A84B-C244C4B3B827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D462BDC7-2BE5-45F1-A84B-C244C4B3B827}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D462BDC7-2BE5-45F1-A84B-C244C4B3B827}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D462BDC7-2BE5-45F1-A84B-C244C4B3B827}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
