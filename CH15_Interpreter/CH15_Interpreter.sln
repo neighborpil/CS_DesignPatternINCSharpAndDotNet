@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lec77_HandmadeInterpreter_Lexing", "Lec77_HandmadeInterpreter_Lexing\Lec77_HandmadeInterpreter_Lexing.csproj", "{42AFB2F1-6487-4707-B264-D6D1CA0CD3AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_HandmadeInterpreter_Lexing", "Test_HandmadeInterpreter_Lexing\Test_HandmadeInterpreter_Lexing.csproj", "{F28E5509-F0C0-40FC-9F9F-DFD43BC16797}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42AFB2F1-6487-4707-B264-D6D1CA0CD3AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42AFB2F1-6487-4707-B264-D6D1CA0CD3AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42AFB2F1-6487-4707-B264-D6D1CA0CD3AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42AFB2F1-6487-4707-B264-D6D1CA0CD3AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F28E5509-F0C0-40FC-9F9F-DFD43BC16797}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F28E5509-F0C0-40FC-9F9F-DFD43BC16797}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F28E5509-F0C0-40FC-9F9F-DFD43BC16797}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F28E5509-F0C0-40FC-9F9F-DFD43BC16797}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F9F67B7D-255C-46B2-8B93-7786BB92DB41}
+	EndGlobalSection
+EndGlobal
