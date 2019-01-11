@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_HandmadeInterpreter_Le
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lec78_HandmadeInterpreter_Parsing", "Lec78_HandmadeInterpreter_Parsing\Lec78_HandmadeInterpreter_Parsing.csproj", "{1237D95B-68C5-48F3-B47F-5C9F13659577}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_HandmadeInterpreter_Parsing", "Test_HandmadeInterpreter_Parsing\Test_HandmadeInterpreter_Parsing.csproj", "{C0F77931-D078-414F-A669-B36F0B3E86FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{1237D95B-68C5-48F3-B47F-5C9F13659577}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1237D95B-68C5-48F3-B47F-5C9F13659577}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1237D95B-68C5-48F3-B47F-5C9F13659577}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0F77931-D078-414F-A669-B36F0B3E86FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0F77931-D078-414F-A669-B36F0B3E86FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0F77931-D078-414F-A669-B36F0B3E86FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0F77931-D078-414F-A669-B36F0B3E86FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
