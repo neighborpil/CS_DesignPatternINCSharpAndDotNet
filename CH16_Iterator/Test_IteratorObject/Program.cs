@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static System.Console;
-namespace Lec82_IteratorObject
+
+namespace Test_IteratorObject
 {
     public class Node<T>
     {
@@ -12,7 +12,7 @@ namespace Lec82_IteratorObject
         public Node<T> Left, Right;
         public Node<T> Parent;
 
-        public Node(T value) // for parent node
+        public Node(T value)
         {
             Value = value;
         }
@@ -22,7 +22,6 @@ namespace Lec82_IteratorObject
             Value = value;
             Left = left;
             Right = right;
-
             left.Parent = right.Parent = this;
         }
     }
@@ -30,7 +29,7 @@ namespace Lec82_IteratorObject
     public class InOrderIterator<T>
     {
         private readonly Node<T> root;
-        public Node<T> Current { get; set; }
+        public Node<T> Current;
         private bool yieldedStart;
 
         public InOrderIterator(Node<T> root)
@@ -38,10 +37,6 @@ namespace Lec82_IteratorObject
             this.root = Current = root;
             while (Current.Left != null)
                 Current = Current.Left;
-            //   1
-            //  / \
-            // 2   3
-            // ^  Current
         }
 
         public bool MoveNext()
@@ -82,21 +77,15 @@ namespace Lec82_IteratorObject
     {
         static void Main(string[] args)
         {
-            //   1
-            //  / \
-            // 2   3
-
-            // in-order: 213
-
             var root = new Node<int>(1, new Node<int>(2), new Node<int>(3));
             var it = new InOrderIterator<int>(root);
             while (it.MoveNext())
             {
-                Write(it.Current.Value);
-                Write(',');
+                Console.Write(it.Current.Value);
+                Console.Write(",");
             }
-            WriteLine();
-            ReadKey();
+            Console.WriteLine();
+            Console.ReadKey();
         }
     }
 }
