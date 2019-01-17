@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lec83_IteratorMethod", "Lec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_IteratorMethod", "Test_IteratorMethod\Test_IteratorMethod.csproj", "{748D0585-99AC-48AE-AA96-5242338A1FC4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lec84_IteratorsAndDuckTyping", "Lec84_IteratorsAndDuckTyping\Lec84_IteratorsAndDuckTyping.csproj", "{2CF76F5D-BCB0-4E52-B4A3-18FA13033906}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_IteratorsAndDuckTyping", "Test_IteratorsAndDuckTyping\Test_IteratorsAndDuckTyping.csproj", "{21784266-49BC-412B-BBA5-F6A58A5450A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{748D0585-99AC-48AE-AA96-5242338A1FC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{748D0585-99AC-48AE-AA96-5242338A1FC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{748D0585-99AC-48AE-AA96-5242338A1FC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CF76F5D-BCB0-4E52-B4A3-18FA13033906}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CF76F5D-BCB0-4E52-B4A3-18FA13033906}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CF76F5D-BCB0-4E52-B4A3-18FA13033906}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CF76F5D-BCB0-4E52-B4A3-18FA13033906}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21784266-49BC-412B-BBA5-F6A58A5450A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21784266-49BC-412B-BBA5-F6A58A5450A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21784266-49BC-412B-BBA5-F6A58A5450A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21784266-49BC-412B-BBA5-F6A58A5450A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
