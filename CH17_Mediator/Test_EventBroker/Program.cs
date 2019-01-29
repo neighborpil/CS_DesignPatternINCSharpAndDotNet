@@ -1,15 +1,14 @@
-﻿using System;
+﻿using Autofac;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reactive.Linq;
+using System.Reactive.Subjects;
 using System.Text;
 using System.Threading.Tasks;
-using Timer = System.Timers.Timer;
 using static System.Console;
-using System.Reactive.Subjects;
-using System.Reactive.Linq;
-using Autofac;
 
-namespace Lec89_EventBroker
+namespace Test_EventBroker
 {
     public class Actor
     {
@@ -25,15 +24,14 @@ namespace Lec89_EventBroker
     {
         public string Name { get; set; }
         public int GoalScored { get; set; } = 0;
-        public void Score()
+        public void Scored()
         {
             GoalScored++;
             broker.Publish(new PlayerScoredEvent { Name = Name, GoalsScored = GoalScored });
         }
-
         public void AssaultReferee()
         {
-            broker.Publish(new PlayerSentOffEvent { Name = Name, Reason = "violence" });
+            broker.Publish(new PlayerSentOffEvent { Name = Name, Reason = "voilence" });
         }
 
         public FootballPlayer(EventBroker broker, string name) : base(broker)
@@ -44,7 +42,7 @@ namespace Lec89_EventBroker
                 .Subscribe(ps => WriteLine($"{name}: Nicely done, {ps.Name}! It's your {ps.GoalsScored} goal."));
             broker.OfType<PlayerSentOffEvent>()
                 .Where(ps => !ps.Name.Equals(name))
-                .Subscribe(ps => WriteLine($"{name}: see you in the lockers, {ps.Name}"));
+                .Subscribe(ps => WriteLine($"{name}: See you in the lockers, {ps.Name}"));
         }
     }
 
@@ -53,17 +51,9 @@ namespace Lec89_EventBroker
         public FootballCoach(EventBroker broker) : base(broker)
         {
             broker.OfType<PlayerScoredEvent>()
-                .Subscribe(pe =>
-                {
-                    if (pe.GoalsScored < 3)
-                        WriteLine($"Coach: well done, {pe.Name}!");
-                });
+                .Subscribe(ps => WriteLine($"Coach: Well done, {ps.Name}"));
             broker.OfType<PlayerSentOffEvent>()
-                .Subscribe(pe =>
-                {
-                    if (pe.Reason == "violence")
-                        WriteLine($"Coach: how could you, {pe.Name}");
-                });
+                .Subscribe(ps => WriteLine($"Coach: How could you, {ps.Name}"));
         }
     }
 
@@ -94,6 +84,7 @@ namespace Lec89_EventBroker
         {
             subscriptions.OnNext(pe);
         }
+
     }
 
     class Program
@@ -104,21 +95,21 @@ namespace Lec89_EventBroker
             cb.RegisterType<EventBroker>().SingleInstance();
             cb.RegisterType<FootballCoach>();
             cb.Register((c, p) => new FootballPlayer(
-                    c.Resolve<EventBroker>(),
-                    p.Named<string>("name")
-                    ));
+                c.Resolve<EventBroker>(),
+                p.Named<string>("name")));
             using(var c = cb.Build())
             {
                 var coach = c.Resolve<FootballCoach>();
                 var player1 = c.Resolve<FootballPlayer>(new NamedParameter("name", "John"));
                 var player2 = c.Resolve<FootballPlayer>(new NamedParameter("name", "Chris"));
 
-                player1.Score();
-                player1.Score();
-                player1.Score(); // x
+                player1.Scored();
+                player1.Scored();
+                player1.Scored();
                 player1.AssaultReferee();
-                player2.Score();
+                player2.Scored();
 
+                 ReadKey();
             }
         }
     }
