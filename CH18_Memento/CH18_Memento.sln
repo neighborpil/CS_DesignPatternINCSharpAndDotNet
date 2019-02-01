@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lec93_UndoAndRedo", "Lec93_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_UndoAndRedo", "Test_UndoAndRedo\Test_UndoAndRedo.csproj", "{13623458-C80E-4D26-8628-8EC46D0F498B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lec94_MementoForInterop", "Lec94_MementoForInterop\Lec94_MementoForInterop.csproj", "{8D6A2D80-B906-42A7-A038-B372B0DA762B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{13623458-C80E-4D26-8628-8EC46D0F498B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13623458-C80E-4D26-8628-8EC46D0F498B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13623458-C80E-4D26-8628-8EC46D0F498B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D6A2D80-B906-42A7-A038-B372B0DA762B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D6A2D80-B906-42A7-A038-B372B0DA762B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D6A2D80-B906-42A7-A038-B372B0DA762B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D6A2D80-B906-42A7-A038-B372B0DA762B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
