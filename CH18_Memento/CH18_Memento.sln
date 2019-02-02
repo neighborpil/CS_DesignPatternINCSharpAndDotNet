@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_UndoAndRedo", "Test_Un
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lec94_MementoForInterop", "Lec94_MementoForInterop\Lec94_MementoForInterop.csproj", "{8D6A2D80-B906-42A7-A038-B372B0DA762B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex1", "Ex1\Ex1.csproj", "{E3D69CD8-9E85-459C-A429-9FD605109BFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex1_Answer", "Ex1_Answer\Ex1_Answer.csproj", "{D884FE78-B7FD-4EA1-A672-5DBB65CB6018}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{8D6A2D80-B906-42A7-A038-B372B0DA762B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D6A2D80-B906-42A7-A038-B372B0DA762B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D6A2D80-B906-42A7-A038-B372B0DA762B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3D69CD8-9E85-459C-A429-9FD605109BFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3D69CD8-9E85-459C-A429-9FD605109BFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3D69CD8-9E85-459C-A429-9FD605109BFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3D69CD8-9E85-459C-A429-9FD605109BFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D884FE78-B7FD-4EA1-A672-5DBB65CB6018}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D884FE78-B7FD-4EA1-A672-5DBB65CB6018}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D884FE78-B7FD-4EA1-A672-5DBB65CB6018}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D884FE78-B7FD-4EA1-A672-5DBB65CB6018}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
