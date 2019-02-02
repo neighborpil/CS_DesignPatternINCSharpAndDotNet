@@ -80,6 +80,7 @@ namespace Lec97_NullObject
             using (var c = cb.Build())
             {
                 var ba = c.Resolve<BankAccount>();
+                ba.Deposit(100);
 
             }
 
