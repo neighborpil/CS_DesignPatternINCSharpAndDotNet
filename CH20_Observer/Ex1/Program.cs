@@ -1,0 +1,128 @@
+﻿using NUnit.Framework;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ex1
+{
+    public class Game
+    {
+        public event EventHandler RatEnters, RatDies;
+        public event EventHandler<Rat> NotifyRat;
+
+        public void FireRatEnters(object sender)
+        {
+            RatEnters?.Invoke(sender, EventArgs.Empty);
+        }
+
+        public void FireRatDies(object sender)
+        {
+            RatDies?.Invoke(sender, EventArgs.Empty);
+        }
+
+        public void FireNotifyRat(object sender, Rat whichRat)
+        {
+            NotifyRat?.Invoke(sender, whichRat);
+        }
+    }
+
+    public class Rat : IDisposable
+    {
+        public int Attack = 1;
+        public readonly Game game;
+
+        public Rat(Game game)
+        {
+            this.game = game;
+            this.game.RatEnters += (sender, args) =>
+            {
+                if (sender != this)
+                {
+                    ++Attack;
+                    game.FireNotifyRat(this, (Rat)sender);
+                }
+            };
+            this.game.NotifyRat += (sender, rat) =>
+            {
+                if (rat == this)
+                    ++Attack;
+            };
+            this.game.RatDies += (sender, args) => --Attack;
+            game.FireRatEnters(this);
+        }
+
+    public void Dispose()
+        {
+            game.FireRatDies(this);
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var game = new Game();
+            var rat1 = new Rat(game);
+            var rat2 = new Rat(game);
+            Console.WriteLine(rat1.Attack);
+            Console.WriteLine(rat2.Attack);
+            Console.ReadKey();
+        }
+    }
+}
+
+namespace Ex1.Tests
+{
+    [TestFixture]
+    public class Tests
+    {
+        [Test]
+        public void PlayingByTheRules()
+        {
+            Assert.That(typeof(Game).GetFields(), Is.Empty);
+            Assert.That(typeof(Game).GetProperties(), Is.Empty);
+        }
+
+        [Test]
+        public void SingleRatTest()
+        {
+            var game = new Game();
+            var rat = new Rat(game);
+            Assert.That(rat.Attack, Is.EqualTo(1));
+        }
+
+        [Test]
+        public void TwoRatTest()
+        {
+            var game = new Game();
+            var rat = new Rat(game);
+            var rat2 = new Rat(game);
+            Assert.That(rat.Attack, Is.EqualTo(2));
+            Assert.That(rat2.Attack, Is.EqualTo(2));
+        }
+
+        [Test]
+        public void ThreeRatTest()
+        {
+            var game = new Game();
+            var rat = new Rat(game);
+            Assert.That(rat.Attack, Is.EqualTo(1));
+
+            var rat2 = new Rat(game);
+            Assert.That(rat.Attack, Is.EqualTo(2));
+            Assert.That(rat2.Attack, Is.EqualTo(2));
+
+            using (var rat3 = new Rat(game))
+            {
+                Assert.That(rat.Attack, Is.EqualTo(3));
+                Assert.That(rat2.Attack, Is.EqualTo(3));
+                Assert.That(rat3.Attack, Is.EqualTo(3));
+            }
+            
+            Assert.That(rat.Attack, Is.EqualTo(2));
+            Assert.That(rat2.Attack, Is.EqualTo(2));
+        }
+    }
+}
